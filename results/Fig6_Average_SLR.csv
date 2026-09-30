@@ -1,0 +1,11 @@
+Graph_Type,Tasks(|V|),TMDS_Avg_SLR,THEFT_Avg_SLR
+Gaussian,35,0.7831,0.854
+Gaussian,77,0.7718,0.8464
+Gaussian,119,0.8165,0.909
+Gaussian,170,0.8071,0.8944
+Gaussian,209,0.8022,0.9287
+Laplace,36,0.8965,0.9261
+Laplace,81,0.9099,0.9341
+Laplace,121,0.9466,0.9816
+Laplace,169,0.9639,0.9904
+Laplace,196,0.9607,1.0052

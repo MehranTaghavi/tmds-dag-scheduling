@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TMDS Schedule Trace</title>
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<style>
+    body { font-family: 'Times New Roman', Times, serif; margin: 40px; color: #000; }
+    h3 { text-align: center; font-size: 16px; font-weight: bold; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; text-align: center; margin: 0 auto; }
+    th, td { padding: 8px 4px; border: 1px solid #eee; }
+    thead tr:first-child { border-top: 2px solid #000; }
+    thead tr:last-child { border-bottom: 1px solid #000; }
+    tbody tr:last-child { border-bottom: 2px solid #000; }
+    .divider-right { border-right: 1px solid #000; }
+</style>
+</head>
+<body>
+<h3>Table 3. Schedule Produced by True TMDS Logic in Each Iteration (Makespan: 74.70s)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" class="divider-right"><i>taskList</i></th>
+                <th rowspan="2">$\tau_j$</th>
+                <th rowspan="2" class="divider-right"><i>R</i></th>
+                <th colspan="3" class="divider-right">OFT</th>
+                <th colspan="3" class="divider-right">EST</th>
+                <th colspan="3" class="divider-right">EFT</th>
+                <th colspan="3" class="divider-right">SCT</th>
+                <th colspan="3">Allocation</th>
+            </tr>
+            <tr>
+                <th>$p_1$</th><th>$p_2$</th><th class="divider-right">$p_3$</th>
+                <th>$p_1$</th><th>$p_2$</th><th class="divider-right">$p_3$</th>
+                <th>$p_1$</th><th>$p_2$</th><th class="divider-right">$p_3$</th>
+                <th>$p_1$</th><th>$p_2$</th><th class="divider-right">$p_3$</th>
+                <th>AFT[$\tau_j$]</th><th>$p_n$</th><th>$\Gamma_n^{cur}$</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t1,t5,t2,t4,t6,t3,t9,t...</td>
+                <td>$\tau_{1}$</td>
+                <td class="divider-right">60.44</td>
+                <td>63.00</td><td>60.33</td><td class="divider-right">58.00</td>
+                <td>0.00</td><td>0.00</td><td class="divider-right">0.00</td>
+                <td>16.00</td><td>15.00</td><td class="divider-right">14.00</td>
+                <td>63.00</td><td>60.33</td><td class="divider-right">58.00</td>
+                <td><b>14.00</b></td><td><b>p3</b></td><td>46.4&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t5,t2,t4,t6,t3,t9,t7,t...</td>
+                <td>$\tau_{5}$</td>
+                <td class="divider-right">45.78</td>
+                <td>48.00</td><td>45.33</td><td class="divider-right">44.00</td>
+                <td>17.00</td><td>16.00</td><td class="divider-right">14.00</td>
+                <td>36.00</td><td>34.00</td><td class="divider-right">34.00</td>
+                <td>65.00</td><td>61.33</td><td class="divider-right">58.00</td>
+                <td><b>34.00</b></td><td><b>p3</b></td><td>53.4&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t2,t4,t6,t3,t9,t7,t8,t10</td>
+                <td>$\tau_{2}$</td>
+                <td class="divider-right">43.50</td>
+                <td>44.50</td><td>44.00</td><td class="divider-right">42.00</td>
+                <td>16.50</td><td>15.67</td><td class="divider-right">34.00</td>
+                <td>32.50</td><td>32.67</td><td class="divider-right">52.00</td>
+                <td>61.00</td><td>59.67</td><td class="divider-right">76.00</td>
+                <td><b>32.67</b></td><td><b>p2</b></td><td>52.1&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t4,t6,t3,t9,t7,t8,t10</td>
+                <td>$\tau_{4}$</td>
+                <td class="divider-right">40.17</td>
+                <td>44.50</td><td>35.00</td><td class="divider-right">41.00</td>
+                <td>17.50</td><td>32.67</td><td class="divider-right">34.00</td>
+                <td>36.50</td><td>42.67</td><td class="divider-right">51.00</td>
+                <td>62.00</td><td>67.67</td><td class="divider-right">75.00</td>
+                <td><b>36.50</b></td><td><b>p1</b></td><td>33.3&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t6,t3,t9,t7,t8,t10</td>
+                <td>$\tau_{6}$</td>
+                <td class="divider-right">37.06</td>
+                <td>40.50</td><td>36.67</td><td class="divider-right">34.00</td>
+                <td>36.50</td><td>32.67</td><td class="divider-right">34.00</td>
+                <td>51.50</td><td>48.67</td><td class="divider-right">47.00</td>
+                <td>77.00</td><td>69.33</td><td class="divider-right">68.00</td>
+                <td><b>47.00</b></td><td><b>p3</b></td><td>57.8&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t3,t9,t7,t8,t10</td>
+                <td>$\tau_{3}$</td>
+                <td class="divider-right">36.06</td>
+                <td>39.50</td><td>36.67</td><td class="divider-right">32.00</td>
+                <td>36.50</td><td>32.67</td><td class="divider-right">47.00</td>
+                <td>54.50</td><td>48.67</td><td class="divider-right">62.78</td>
+                <td>76.00</td><td>69.33</td><td class="divider-right">81.78</td>
+                <td><b>48.67</b></td><td><b>p2</b></td><td>55.0&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t9,t7,t8,t10</td>
+                <td>$\tau_{9}$</td>
+                <td class="divider-right">27.33</td>
+                <td>30.00</td><td>28.00</td><td class="divider-right">24.00</td>
+                <td>41.67</td><td>48.67</td><td class="divider-right">47.00</td>
+                <td>61.67</td><td>67.67</td><td class="divider-right">70.26</td>
+                <td>71.67</td><td>76.67</td><td class="divider-right">77.26</td>
+                <td><b>61.67</b></td><td><b>p1</b></td><td>36.6&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t7,t8,t10</td>
+                <td>$\tau_{7}$</td>
+                <td class="divider-right">25.61</td>
+                <td>30.50</td><td>27.33</td><td class="divider-right">19.00</td>
+                <td>61.67</td><td>48.67</td><td class="divider-right">50.33</td>
+                <td>81.67</td><td>66.67</td><td class="divider-right">63.05</td>
+                <td>92.17</td><td>76.00</td><td class="divider-right">70.05</td>
+                <td><b>63.05</b></td><td><b>p3</b></td><td>60.0&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t8,t10</td>
+                <td>$\tau_{8}$</td>
+                <td class="divider-right">22.39</td>
+                <td>25.50</td><td>20.67</td><td class="divider-right">21.00</td>
+                <td>61.67</td><td>50.00</td><td class="divider-right">63.05</td>
+                <td>77.67</td><td>62.00</td><td class="divider-right">86.29</td>
+                <td>87.17</td><td>70.67</td><td class="divider-right">93.29</td>
+                <td><b>62.00</b></td><td><b>p2</b></td><td>56.9&deg;C</td>
+            </tr>
+            <tr>
+                <td class="divider-right" style="font-size: 12px;">t10</td>
+                <td>$\tau_{10}$</td>
+                <td class="divider-right">11.33</td>
+                <td>15.00</td><td>12.00</td><td class="divider-right">7.00</td>
+                <td>67.00</td><td>67.67</td><td class="divider-right">64.67</td>
+                <td>82.00</td><td>79.67</td><td class="divider-right">74.70</td>
+                <td>82.00</td><td>79.67</td><td class="divider-right">74.70</td>
+                <td><b>74.70</b></td><td><b>p3</b></td><td>60.0&deg;C</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
