@@ -107,8 +107,9 @@ architectural and scheduling problems. His technical expertise includes:
 - **Scientific Software Engineering:** Building robust, modular, and reproducible pipelines for hardware simulation and algorithm validation.
 
 This repository was developed and verified as part of research efforts
-associated with the **Computer Processing Systems Laboratory (CPSLab)** at
-Sharif University of Technology.
+associated with the **Cyber-Physical Systems Laboratory (CPSLab)** and the
+**Embedded Systems Research Laboratory (ESRLab)** at Sharif University of
+Technology.
 
 📫 **Connect & Collaborate:**
 
