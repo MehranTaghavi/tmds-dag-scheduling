@@ -1,0 +1,30 @@
+name: Python CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Graphviz
+        run: sudo apt-get update && sudo apt-get install -y graphviz
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Compile Python sources
+        run: python -m compileall -q algorithms core experiments utils main.py
+
+      - name: Run import smoke test
+        run: python -c "from algorithms.tmds_scheduler import TMDS; from algorithms.theft_scheduler import THEFT; from experiments.motivational_test import run_experiment; from experiments.run_benchmarks import run_monte_carlo_simulation"

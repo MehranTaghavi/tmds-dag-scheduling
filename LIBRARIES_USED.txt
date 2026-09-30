@@ -1,0 +1,34 @@
+TMDS Project - Python Libraries Used
+====================================
+
+External libraries
+------------------
+
+numpy
+  Numerical arrays and vectorized thermal calculations.
+  Used by: algorithms/thermal_math.py, experiments/data_generator.py,
+  experiments/plot_figure6.py
+
+matplotlib
+  Publication-quality charts, plots, and Gantt visualizations.
+  Used by: experiments/plot_figure6.py, utils/gantt_chart.py
+
+graphviz
+  DAG graph construction and rendering.
+  Used by: utils/visualizer.py
+
+Python standard library
+-----------------------
+
+The project also uses modules included with Python: csv, dataclasses, json,
+math, os, random, sys, and typing.
+
+Installation
+------------
+
+Install the external dependencies from the repository root with:
+
+    python -m pip install -r requirements.txt
+
+The graphviz Python package also requires the Graphviz system executable to be
+installed and available on PATH when DAG images are generated.
